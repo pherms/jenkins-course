@@ -17,4 +17,8 @@ function App() {
   );
 }
 
+function AnotherApp() {
+  return ()
+}
+
 export default App;
