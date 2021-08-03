@@ -47,4 +47,8 @@ export function getPrecedingRange() {
     return range
   }
 }
+export function getTests() {
+  test = "ok";
+  return test
+}
 /* eslint-enable */
