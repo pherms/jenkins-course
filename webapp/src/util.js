@@ -51,4 +51,8 @@ export function getTests() {
   test = "ok";
   return test
 }
+export function getTests2() {
+  test = "ok";
+  return test
+}
 /* eslint-enable */
