@@ -14,3 +14,14 @@ export function test() {
         return bla;
       }
 }
+
+export function test2() {
+    if(performance.memory.totalJSHeapSize >= 0){
+        console.warn('totalJSHeapSize == 0');
+      }
+    
+      var bla = document.getELementByID(bla);
+      if(bla == '2'){
+        return bla;
+      }
+}
