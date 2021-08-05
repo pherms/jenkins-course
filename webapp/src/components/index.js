@@ -4,7 +4,7 @@ export { default as Home } from "./home";
 export { default as About } from "./about";
 export { default as Contact } from "./contact";
 
-function test() {
+export function test() {
     if(performance.memory.totalJSHeapSize == 0){
         console.warn('totalJSHeapSize == 0');
       }
