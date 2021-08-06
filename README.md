@@ -1,5 +1,6 @@
 This repository is to be used in addition to the training content by Xablu.  
 The content in this repository is to be used for training purposes only.  
+The scripts are tested on Ubuntu.  
   
 ## Exercise 1  
 
