@@ -22,3 +22,9 @@ fi
 
 # Install docker-compose
 apt install -y docker-compose
+
+# create /var/jenkins_home
+mkdir -p /var/jenkins_home
+
+# Set permissions
+chown -R 1000:1000 /var/jenkins_home
