@@ -17,6 +17,7 @@ sh get-docker.sh
 if [ "$(lsb_release -is)" == "Ubuntu" ]; then
   usermod -aG docker ubuntu
   exec su -l $USER
+  exit
 else
   echo "Add user to \"docker\" group."
 fi
