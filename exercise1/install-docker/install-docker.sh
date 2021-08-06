@@ -19,3 +19,6 @@ if [ "$(lsb_release -is)" == "Ubuntu" ]; then
 else
   echo "Add user to \"docker\" group."
 fi
+
+# Install docker-compose
+apt install -y docker-compose
