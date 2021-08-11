@@ -1,6 +1,7 @@
 pipeline {
+    def myEnv = docker.build('myWebApp:snapshot')
     agent {
-        def myEnv = docker.build('myWebApp:snapshot')
+        myEnv
         // docker {
         //     image 'node:lts-buster-slim'
         //     args '-p 3000:3000'
