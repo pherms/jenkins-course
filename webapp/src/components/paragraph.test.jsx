@@ -11,7 +11,7 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('Paragraph', () => {
   it('should render children inside a p tag', () => {
-    const wrapper = shallow(<Paragraph>This is my first test</Paragraph>)
+    const wrapper = shallow(<p>This is my first test</p>)
     const paragraph = wrapper.find('p')
     expect(paragraph).toHaveLength(1)
     expect(paragraph.text()).toEqual('This is my first test')
