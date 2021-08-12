@@ -1,8 +1,4 @@
 pipeline {
-    script {
-        def myEnv = docker.build('myWebApp:snapshot')
-
-    }
     agent {
         docker {
             image 'node:lts-buster-slim'
@@ -27,10 +23,13 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh 'echo "Delivering..."'
-                myEnv.inside {
-                    sh 'npm run build'
+                
+                script {
+                    def myEnv = docker.build('myWebApp:snapshot')
+                    myEnv.inside {
+                        sh 'npm run build'
+                    }
                 }
-
             }
         }
     }
